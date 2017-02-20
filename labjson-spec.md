@@ -42,7 +42,7 @@
 
 <th>Authors</th>
 
-<td>Jason Dalton, Kyle Kalwarski (Azimuth1)</td>
+<td>Jason Dalton, Kyle Kalwarski ([Azimuth1](http://www.azimuth1.com))</td>
 
 </tr>
 
