@@ -1,9 +1,3 @@
-<section class="content">
-
-<div id="content">
-
-<nav id="nav">
-
 ### Contents
 
 *   [1\. Introduction](#introduction)
@@ -36,7 +30,7 @@
     *   [GeometryCollection](#geometrycollection)
 *   [Appendix B. Contributors](#appendix-b-contributors)
 
-</nav>
+
 
 # The LabJSON Format Specification
 
