@@ -100,9 +100,7 @@ A complete LabJSON data structure is always an object (in JSON terms). In LabJSO
 
 A LabJSON sample collection:
 
-<figure class="highlight">
-
-      { "type": "SampleCollection",
+`      { "type": "SampleCollection",
         "samples": [
           { "type": "Sample",
             "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
@@ -135,8 +133,7 @@ A LabJSON sample collection:
              }
            ]
          }
-
-</figure>
+`
 
 ### [1.2\. Definitions](#definitions)
 
@@ -240,7 +237,7 @@ The coordinate reference system (CRS) of a LabJSON object is determined by its `
 
 A CRS object may indicate a coordinate reference system by name. In this case, the value of its `"type"` member must be the string `"name"`. The value of its `"properties"` member must be an object containing a `"name"` member. The value of that `"name"` member must be a string identifying a coordinate reference system. OGC CRS URNs such as `"urn:ogc:def:crs:OGC:1.3:CRS84"` shall be preferred over legacy identifiers such as `"EPSG:4326"`:
 
-<figure class="highlight">
+`
 
       "crs": {
         "type": "name",
@@ -249,7 +246,7 @@ A CRS object may indicate a coordinate reference system by name. In this case, t
           }
         }
 
-</figure>
+`
 
 ### [3.2\. Linked CRS](#linked-crs)
 
@@ -263,7 +260,7 @@ The value of the required `"href"` member must be a dereferenceable URI.
 
 The value of the optional `"type"` member must be a string that hints at the format used to represent CRS parameters at the provided URI. Suggested values are: `"proj4"`, `"ogcwkt"`, `"esriwkt"`, but others can be used:
 
-<figure class="highlight">
+`
 
       "crs": {
         "type": "link",
@@ -274,10 +271,10 @@ The value of the optional `"type"` member must be a string that hints at the for
         }
 
 </figure>
-
+`
 Relative links may be used to direct processors to CRS parameters in an auxiliary file:
 
-<figure class="highlight">
+`
 
       "crs": {
         "type": "link",
@@ -286,8 +283,8 @@ Relative links may be used to direct processors to CRS parameters in an auxiliar
           "type": "ogcwkt"
           }
         }
+`
 
-</figure>
 
 ## [4\. Bounding Boxes](#bounding-boxes)
 
@@ -295,9 +292,7 @@ To include information on the coordinate range for geometries, samples, or sampl
 
 Example of a bbox member on a sample:
 
-<figure class="highlight">
-
-      { "type": "Sample",
+`      { "type": "Sample",
         "bbox": [-10.0, -10.0, 10.0, 10.0],
         "geometry": {
           "type": "Polygon",
@@ -307,21 +302,20 @@ Example of a bbox member on a sample:
           }
         ...
         }
+`
 
-</figure>
 
 Example of a bbox member on a sample collection:
 
-<figure class="highlight">
 
-      { "type": "SampleCollection",
+`      { "type": "SampleCollection",
         "bbox": [100.0, 0.0, 105.0, 1.0],
         "samples": [
           ...
           ]
         }
+`
 
-</figure>
 
 ## [Appendix A. Geometry Examples](#appendix-a-geometry-examples)
 
@@ -331,23 +325,20 @@ Each of the examples below represents a complete LabJSON object. Note that unquo
 
 Point coordinates are in x, y order (easting, northing for projected coordinates, longitude, latitude for geographic coordinates):
 
-<figure class="highlight">
+`
+    { "type": "Point", "coordinates": [100.0, 0.0] }
+`
 
-      { "type": "Point", "coordinates": [100.0, 0.0] }
-
-</figure>
 
 ### [LineString](#id3)
 
 Coordinates of LineString are an array of positions (see [2.1.1\. Positions](#positions)):
 
-<figure class="highlight">
-
-      { "type": "LineString",
+`      { "type": "LineString",
         "coordinates": [ [100.0, 0.0], [101.0, 1.0] ]
         }
+`
 
-</figure>
 
 ### [Polygon](#id4)
 
@@ -355,7 +346,7 @@ Coordinates of a Polygon are an array of LinearRing coordinate arrays. The first
 
 No holes:
 
-<figure class="highlight">
+`
 
       { "type": "Polygon",
         "coordinates": [
@@ -363,11 +354,11 @@ No holes:
           ]
        }
 
-</figure>
+`
 
 With holes:
 
-<figure class="highlight">
+`
 
       { "type": "Polygon",
         "coordinates": [
@@ -376,25 +367,25 @@ With holes:
           ]
        }
 
-</figure>
+`
 
 ### [MultiPoint](#id5)
 
 Coordinates of a MultiPoint are an array of positions:
 
-<figure class="highlight">
+`
 
       { "type": "MultiPoint",
         "coordinates": [ [100.0, 0.0], [101.0, 1.0] ]
         }
 
-</figure>
+`
 
 ### [MultiLineString](#id6)
 
 Coordinates of a MultiLineString are an array of LineString coordinate arrays:
 
-<figure class="highlight">
+`
 
       { "type": "MultiLineString",
         "coordinates": [
@@ -403,14 +394,12 @@ Coordinates of a MultiLineString are an array of LineString coordinate arrays:
           ]
         }
 
-</figure>
-
+`
 ### [MultiPolygon](#id7)
 
 Coordinates of a MultiPolygon are an array of Polygon coordinate arrays:
 
-<figure class="highlight">
-
+`
       { "type": "MultiPolygon",
         "coordinates": [
           [[[102.0, 2.0], [103.0, 2.0], [103.0, 3.0], [102.0, 3.0], [102.0, 2.0]]],
@@ -419,14 +408,12 @@ Coordinates of a MultiPolygon are an array of Polygon coordinate arrays:
           ]
         }
 
-</figure>
-
+`
 ### [GeometryCollection](#geometrycollection)
 
 Each element in the geometries array of a GeometryCollection is one of the geometry objects described above:
 
-<figure class="highlight">
-
+`
       { "type": "GeometryCollection",
         "geometries": [
           { "type": "Point",
@@ -438,8 +425,7 @@ Each element in the geometries array of a GeometryCollection is one of the geome
         ]
       }
 
-</figure>
-
+`
 ## [Appendix B. Contributors](#appendix-b-contributors)
 
 The LabJSON format specification is the product of discussions with environmental lab information systems users and vendors.
