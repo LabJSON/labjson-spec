@@ -34,61 +34,13 @@
 
 # The LabJSON Format Specification
 
-<table class="docinfo">
 
-<tbody>
-
-<tr>
-
-<th>Authors</th>
-
-<td>Jason Dalton, Kyle Kalwarski ( [Azimuth1](http://www.azimuth1.com) )</td>
-
-</tr>
-
-<tr>
-
-<th>Revision</th>
-
-<td>0.1</td>
-
-</tr>
-
-<tr>
-
-<th>Date</th>
-
-<td>16 June 2016</td>
-
-</tr>
-
-<tr>
-
-<th>Abstract</th>
-
-<td>LabJSON is an environmenatal laboratory data interchange format based on JavaScript Object Notation (JSON).</td>
-
-</tr>
-
-<tr>
-
-<th>Copyright</th>
-
-<td>Copyright © 2016 by the Authors. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).</td>
-
-</tr>
-
-<tr>
-
-<th>Status</th>
-
-<td>Initial proposed draft.</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|Authors|Jason Dalton, Kyle Kalwarski - Azimuth1 http://www.azimuth1.com |
+|Revision|0.1|
+|Date|16 June 2016|
+|AbstractLabJSON is an environmenatal laboratory data interchange format based on JavaScript Object Notation (JSON).|
+|Copyright|Copyright © 2016 by the Authors. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).|
+|Status|Initial proposed draft.|
 
 ## [1\. Introduction](#introduction)
 
