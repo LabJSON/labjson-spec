@@ -35,7 +35,7 @@
 # The LabJSON Format Specification
 
 |   |  |
-|----------|:-------------:|
+|----------|-------------|
 |Authors|Jason Dalton, Kyle Kalwarski - Azimuth1 http://www.azimuth1.com |
 |Revision|0.1|
 |Date|16 June 2016|
