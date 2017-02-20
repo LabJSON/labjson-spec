@@ -424,4 +424,4 @@ Each element in the geometries array of a GeometryCollection is one of the geome
 
 ## [Appendix B. Contributors](#appendix-b-contributors)
 
-The LabJSON format specification is the product of discussions with environmental lab information systems users and vendors.
+The LabJSON format specification is the product of discussions with environmental lab information systems users and vendors.   Support for the content of the LabJSON specification was drawn from the GeoJSON and JSON-API specifications.
